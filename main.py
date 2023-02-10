@@ -4,7 +4,7 @@ from collections import namedtuple
 
 Bracket = namedtuple("Bracket", ["char", "position"])
 
-# jehjfjw
+
 def are_matching(left, right):
     return (left + right) in ["()", "[]", "{}"]
 
@@ -30,6 +30,7 @@ def find_mismatch(text):
             else:
                 return i+1
             pass
+        
 
     if opening_brackets_stack.__len__() > 0:
         opening_brackets_stack.pop()
