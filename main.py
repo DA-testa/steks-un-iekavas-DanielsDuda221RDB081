@@ -42,7 +42,8 @@ def find_mismatch(text):
 def main():
     text = input()
     if "I" in text:
-        mismatch = find_mismatch(text)
+        text2= input()
+        mismatch = find_mismatch(text2)
     if mismatch < 0 and text.__len__() <= 105:
         print("Success")
     else:
