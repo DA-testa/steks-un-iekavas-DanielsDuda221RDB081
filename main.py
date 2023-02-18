@@ -44,6 +44,8 @@ def main():
     if "I" in text:
         text2= input()
         mismatch = find_mismatch(text2)
+    if "F" in text:
+        pass
     if mismatch < 0 and text.__len__() <= 105:
         print("Success")
     else:
